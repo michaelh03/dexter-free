@@ -29,7 +29,7 @@ Dexter-Free also supports the **free API from Yahoo Finance**, giving you a zero
 - Python 3.10 or higher
 - [uv](https://github.com/astral-sh/uv) package manager
 - OpenAI API key (get [here](https://platform.openai.com/api-keys))
-- Financial Datasets API key (get [here](https://financialdatasets.ai))
+- Financial Datasets API key (optional; get [here](https://financialdatasets.ai) for premium data)
 
 ### Installation
 
@@ -56,10 +56,14 @@ cp env.example .env
 
 ### Usage
 
-Run Dexter in interactive mode:
+Run Dexter in interactive mode (defaults to Yahoo Finance):
 ```bash
+uv run dexter-agent
+```
 
-uv run dexter-agent --provider yfinance
+Switch to the FinancialDatasets provider when you need premium data:
+```bash
+uv run dexter-agent --provider financialdatasets
 ```
 
 ### Example Queries

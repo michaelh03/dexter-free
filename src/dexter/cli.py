@@ -15,7 +15,7 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--provider",
         choices=AVAILABLE_DATA_PROVIDERS,
-        default=os.getenv("DEXTER_DATA_PROVIDER", "financialdatasets"),
+        default=os.getenv("DEXTER_DATA_PROVIDER", "yfinance"),
         help="Select the data provider backend. Overrides the DEXTER_DATA_PROVIDER environment variable.",
     )
     return parser.parse_args()

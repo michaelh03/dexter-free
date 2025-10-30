@@ -77,7 +77,7 @@ AVAILABLE_DATA_PROVIDERS: tuple[str, ...] = ("financialdatasets", "yfinance")
 
 
 def get_tools(
-    provider: Literal["financialdatasets", "yfinance"] = "financialdatasets",
+    provider: Literal["financialdatasets", "yfinance"] = "yfinance",
 ) -> list[Callable[..., any]]:
     """Return the tool collection for the requested data provider."""
     provider_key = provider.lower()

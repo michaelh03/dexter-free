@@ -21,7 +21,7 @@ class Agent:
         self,
         max_steps: int = 20,
         max_steps_per_task: int = 5,
-        data_provider: str = "financialdatasets",
+        data_provider: str = "yfinance",
     ):
         self.logger = Logger()
         self.max_steps = max_steps            # global safety cap
@@ -29,9 +29,9 @@ class Agent:
         provider_key = data_provider.lower()
         if provider_key not in AVAILABLE_DATA_PROVIDERS:
             self.logger._log(
-                f"Unknown data provider '{data_provider}'. Falling back to Financial Datasets API."
+                f"Unknown data provider '{data_provider}'. Falling back to Yahoo Finance."
             )
-            provider_key = "financialdatasets"
+            provider_key = "yfinance"
         self.data_provider = provider_key
         self.tools = get_tools(provider_key)
         self.logger._log(f"Agent initialized with data provider: {self.data_provider}")
