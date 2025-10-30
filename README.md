@@ -1,6 +1,10 @@
-# Dexter 🤖
+# Dexter - Free 🤖
 
 Dexter is an autonomous financial research agent that thinks, plans, and learns as it works. It performs analysis using task planning, self-reflection, and real-time market data. Think Claude Code, but built specifically for financial research.
+
+*It's a fork of https://github.com/virattt/dexter* 
+
+
 <img width="979" height="651" alt="Screenshot 2025-10-30 at 14 17 41" src="https://github.com/user-attachments/assets/0f3c5cac-d8fd-4cb8-8f79-87e0961ef40d" />
 
 ## Overview
