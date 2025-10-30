@@ -22,7 +22,7 @@ It’s not just another chatbot.  It’s an agent that plans ahead, verifies its
 
 Dexter-Free also supports the **free API from Yahoo Finance**, giving you a zero-cost data provider option out of the box.
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/virattt?style=social)](https://twitter.com/virattt)
+[![Twitter Follow](https://img.shields.io/twitter/follow/michaelh03x?style=social)](https://twitter.com/michaelh03x)
 
 ### Prerequisites
 
@@ -58,12 +58,8 @@ cp env.example .env
 
 Run Dexter in interactive mode:
 ```bash
-uv run dexter-agent
-```
 
-Run Dexter with the Yahoo Finance provider:
-```bash
-uv run python -m dexter.cli --provider yfinance "What is Tesla's free cash flow?"
+uv run dexter-agent --provider yfinance
 ```
 
 ### Example Queries
