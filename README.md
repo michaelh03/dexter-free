@@ -20,6 +20,8 @@ It’s not just another chatbot.  It’s an agent that plans ahead, verifies its
 - **Real-Time Financial Data**: Access to income statements, balance sheets, and cash flow statements
 - **Safety Features**: Built-in loop detection and step limits to prevent runaway execution
 
+Dexter-Free also supports the **free API from Yahoo Finance**, giving you a zero-cost data provider option out of the box.
+
 [![Twitter Follow](https://img.shields.io/twitter/follow/virattt?style=social)](https://twitter.com/virattt)
 
 ### Prerequisites
@@ -57,6 +59,11 @@ cp env.example .env
 Run Dexter in interactive mode:
 ```bash
 uv run dexter-agent
+```
+
+Run Dexter with the Yahoo Finance provider:
+```bash
+uv run python -m dexter.cli --provider yfinance "What is Tesla's free cash flow?"
 ```
 
 ### Example Queries
@@ -126,4 +133,3 @@ agent = Agent(
 ## License
 
 This project is licensed under the MIT License.
-
